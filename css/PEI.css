@@ -1,0 +1,169 @@
+*{margin: 0; padding: 0;}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*헤더 */
+.header img {
+    width: 100%;
+}
+
+.fa-home {
+    margin-top: 20px;
+    font-size: 3.5em;
+    color: #213753;
+}
+
+.fa-home:hover {
+    color: #CBE3EE;
+}
+
+.header p {
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: grey;
+    width: 4em;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: #394867;
+}
+
+
+/*메뉴 */
+.nav {
+    background-color: white;
+    z-index: 1000;
+}
+
+.nav ul {
+    margin: 30px auto;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #5c969e;
+}
+
+.nav a:hover {
+    border-bottom: 3px solid #9ba4b4;
+}
+
+
+/*section PHOTO */
+.bx-wrapper {
+    margin: 0 auto;
+}
+
+.bxslider img {
+    width: 900px;
+    height: 500px;
+}
+
+
+.none {
+    height: 10em;
+}
+
+
+/*section LOCATION */
+.sec2 {
+    margin-left: 9em;
+}
+
+.sec2 ul li {
+    display: inline-block;
+}
+
+.sec2 ul li img {
+    width: 450px;
+    height: 350px;
+}
+
+.sec2 h6 {
+    width: 900px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.sec2 h4 {
+    padding-left: 10px;
+    border-left: 3px solid black;
+}
+
+.sec2 p {
+    width: 900px;
+}
+
+
+/*section GREEN GABLES */
+.sec3 {
+    margin-left: 9em;
+}
+
+.sec3 img {
+    width: 450px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.sec3 pre {
+    font-family: sans-serif;
+    float: right;
+    margin-right: 7em;
+}
+
+.sec3 h6 {
+    width: 450px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.sec3 h4 {
+    padding-left: 10px;
+    border-left: 3px solid black;
+}
+
+
+/*section FAMOUS */
+.sec4 {
+    display: flex;
+    margin-left: 70px;
+}
+
+#d1, #d2, #d3 {
+    flex: 1;
+}
+
+.sec4 img {
+    width: 300px;
+    height: 230px;
+}
+
+.sec4 h4 {
+    padding-left: 10px;
+    border-left: 3px solid black;
+}
+
+.sec4 p {
+    width: 300px;
+}
+
+
+/*footer */
+.footer {
+    clear: both;
+}

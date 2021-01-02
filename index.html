@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prince Edward Island</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" /> <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./css/PEI.css">
+    
+    <script>
+		$(document).ready(function() {
+			var nav = $('.nav');
+			var navLocation = nav.offset();
+
+			$(window).scroll(function() {
+				if($(document).scrollTop() >= navLocation.top) {
+					nav.css({
+						position:"fixed", top:"0",
+                        width:"1200px",
+                        margin:"0 auto"
+					});
+				}
+				else {
+					nav.css({
+						position:"relative",top:""
+					});
+				}
+			});
+		});
+	</script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                slideWidth: 900,
+                slideHeight: 500
+            });
+        });
+    </script>
+    
+    <script>
+        var images = ["./img/AGG04.jpg", "./img/AnneRoom.webp"];
+        var image = new Array();
+        for(var i = 0; i < images.length; i++) {
+            image[i] = new Array();
+            image[i].src = images[i];
+        }
+        
+        var next = 1;
+        
+        function changeImg(img) {
+            img.src = image[next].src;
+            next++;
+            next %= image.length;
+        }
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+      
+       <!-- 헤더 -->
+        <header class="header">
+            <img src="./img/AGG02.jpg">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <p>HOME</p>
+            <h1>PRINCE EDWARD ISLAND</h1>
+        </header>
+        
+        <!-- 메뉴 -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#PHOTO">PHOTO</a></li>
+                <li><a href="#LOCATION">LOCATION</a></li>
+                <li><a href="#ANNE">GREEN GABLES</a></li>
+                <li><a href="#FAMOUS">FAMOUS</a></li>
+            </ul>
+        </nav>
+        
+        <!-- section PHOTO -->
+        <section id="PHOTO">
+            <div class="sec1">
+                <div class="bxslider">
+                    <div><img src="./img/AGG01.jpg"></div>
+                    <div><img src="./img/Bridge.jpg"></div>
+                    <div><img src="./img/CavendishCoast.jpg"></div>
+                    <div><img src="./img/LightHouse.jpg"></div>
+                    <div><img src="./img/LightHouseOcean.jpg"></div>
+                    <div><img src="./img/Museum.jpg"></div>
+                    <div><img src="./img/ProvinceHouse.jpg"></div>
+                    <div><img src="./img/Sharlottetown.jpg"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="none"></div>
+        
+        <!-- section LOCATION -->
+        <section id="LOCATION">
+            <div class="sec2">
+                <ul>
+                    <li><img src="./img/map.jpg"></li>
+                    <li><img src="./img/PEImapc.jpg"></li>
+                </ul>
+                <h6>ⓒ Canada-Maps.org</h6>
+                <h4>프린스 에드워드 아일랜드 지도 및 위치</h4>
+                <br>
+                <p>&nbsp;줄여서 PEI라고 불리는 프린스 에드워드 아일랜드&#40Prince Edward Island&#41; 주는 캐나다 남동부에 위치해 있으며, 뉴브런즈윅 주, 노바스코샤 주, 퀘백 주, 뉴펀들랜드 주와, 세인트 로렌스만의 래브라도 주 사이에 있습니다. 또한, 캐나다에서 가장 작은 주이며, 이곳의 주요 도시는 샬럿 타운입니다.<br><br>&nbsp;프린스 에드워드 아일랜드 주는 빨간 머리 앤의 배경이 되는 그린 게이블즈와 의사당을 가장 먼저 떠올리게 합니다. 하지만 그밖에도, 이 작은 곳에는 예쁜 배경과 볼거리, 맛있는 음식들이 많고, 즐거운 축제가 열리기 때문에 사람들이 여행으로 많이 찾아 오는 것입니다.</p>
+            </div>
+        </section>
+        
+        <div class="none"></div>
+        
+        <!-- section GREEN GABLES -->
+        <section id="ANNE">
+            <div class="sec3">
+                <img src="./img/AGG04.jpg" onclick="changeImg(this)" title="클릭하세요">
+                <pre>
+                
+빨간 머리 앤을 아시나요?
+그렇다면 원제 'Anne of Green Gables'도 들어보셨을 겁니다.
+Green Gables는 빨간 머리 앤의 주요 배경이 되는 곳이죠.       
+               
+또한, 허구가 아니라 실재한다는 사실도 알고 계신가요?
+바로 이 프린스 에드워드 아일랜드에서 보실 수 있습니다!
+               
+캐번디시 마을의 Green Gables Heritage Place를
+방문하면 볼 수 있는 이곳은 PEI의 필수 여행지입니다.
+               
+빨간 머리 앤의 팬이라면 캐번디시 주변에 있는
+앤의 박물관, 작가 '루시 모드 몽고메리'의 생가도
+놓치지 말고 꼭 가시길 바랍니다!
+                </pre>
+                <h6>ⓒ Prince Edward Island Tourism</h6>
+                <h4>그린 게이블즈 하우스</h4>
+            </div>
+        </section>
+        
+        <div class="none"></div>
+        
+        <!-- section FAMOUS -->
+        <section id="FAMOUS">
+            <div class="sec4">
+                <div id="d1">
+                    <img src="./img/Greenwich.jpg">
+                    <h4>그리니치, PEI 국립 공원</h4>
+                    <br>
+                    <p>&nbsp;그리니치에 있는 프린스 에드워드 아일랜드 국립 공원에는 50km가 넘는 하이킹 및 사이클링 드레일과 해변, PEI에서 가장 큰 모래언덕이 있습니다.<br><br>&nbsp;또한 이곳은 Green Gables Heritage Place와 Dalvay by the sea 호텔 같은 국립 사적지를 관리하고 있습니다.</p>
+                </div>
+                <div id="d2">
+                    <img src="./img/lobster.jpg">
+                    <h4>PEI 랍스터</h4>
+                    <br>
+                    <p>&nbsp;PEI에는 농작물이 풍부할 뿐만 아니라 신선한 해산물도 가득합니다. 그 중 랍스터가 가장 유명합니다. 5~6월, 8~10월 사이가 랍스터 시즌이고, 4~6월이 랍스터 시즌의 절정기입니다.<br><br>&nbsp;1년 내내 PEI에서 랍스터를 맛볼 수 있지만, 랍스터 시즌에 드시면 더 훌륭한 맛을 느낄 수 있지 않을까요?</p>
+                </div>
+                <div id="d3">
+                    <img src="./img/beach.jpg">
+                    <h4>PEI 해변</h4>
+                    <br>
+                    <p>&nbsp;바다로 둘러싸인 섬답게 PEI에는 아름다운 해변이 많이 있습니다. 국립 공원 및 주립 공원 안에 위치하고, 대표적으로 Brackley와 Canvendish 해변이 있습니다.<br><br>&nbsp;해변의 사람들은 낮잠을 자고, 물을 서로에게 튀기며 놀고, 모래성을 짓고, 산책을 하고, 일몰을 감상합니다. 여러분도 이런 여유로운 생활을 경험해 보시는 게 어떨까요?</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="none"></div>
+        
+        <!-- footer -->
+        <footer class="footer">
+            CopyRight 2020. 정지은
+        </footer>
+    </div>
+</body>
+</html>
